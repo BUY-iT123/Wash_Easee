@@ -1,0 +1,29 @@
+:root{
+  --outer:#E8EBF5;      /* page behind the phone frame (desktop only) */
+  --bg:#FAFBFF;         /* app background */
+  --card:#FFFFFF;
+  --ink:#0F1B3D;        /* primary text, dark tile */
+  --mute:#5F6B8A;       /* secondary text */
+  --line:#DCE6F8;       /* borders, dividers, ribbon track */
+  --accent:#2268E8;     /* brand blue: buttons, badge, logo mark, flat bar, final card */
+  --on-accent:#FFFFFF;
+  --soft:#E6EFFD;       /* light blue: chips, bars, soft tiles */
+  --error:#D14343;
+  --shadow:0 8px 28px rgba(30,40,90,.08);
+  --btn-shadow:0 6px 18px rgba(34,104,232,.3);
+  --font-display:"Sora","DM Sans",system-ui,sans-serif;
+  --font-body:"DM Sans",system-ui,sans-serif;
+  --r-card:26px; --r-btn:20px; --r-input:18px; --r-tile:15px; --r-bar:12px; --r-sheet:30px; --r-frame:36px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --outer:#070815; --bg:#0E1020; --card:#181B30; --ink:#F2F4FF; --mute:#9AA0BE;
+    --line:#2A2E48; --soft:#20243C; --shadow:0 8px 28px rgba(0,0,0,.35); color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --outer:#070815; --bg:#0E1020; --card:#181B30; --ink:#F2F4FF; --mute:#9AA0BE;
+  --line:#2A2E48; --soft:#20243C; --shadow:0 8px 28px rgba(0,0,0,.35); color-scheme:dark;
+}
+/* Fonts: <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;800&display=swap" rel="stylesheet"> */
