@@ -37,6 +37,7 @@ h3 { @apply text-base font-extrabold tracking-[-.01em]; }
 .btn { @apply flex min-h-14 w-full cursor-pointer items-center justify-center gap-2 rounded-button border-0 bg-accent text-center font-brand-body text-[1.02rem] font-bold text-on-accent no-underline shadow-[var(--btn-shadow)]; }
 .btn.ghost { @apply min-h-12 border-[1.5px] border-line bg-card text-ink shadow-none; }
 .btn.sm { @apply min-h-10 w-auto rounded-[14px] px-4 text-[.9rem] shadow-none; }
+section[class~="rounded-card"] h3 { @apply mb-2.5; }
 .card { @apply mt-4 rounded-card bg-card p-5 shadow-[var(--shadow)]; }
 .card h3 { @apply mb-2.5; }
 .hero { @apply px-0 pb-1 pt-3.5; }
@@ -89,6 +90,14 @@ input::placeholder { @apply text-mute opacity-100; }
 .form-submit { @apply mt-1.5; }
 .form-link { @apply mt-[18px] text-center; }
 .summary { @apply mt-3.5; }
+.pickup-open { @apply mt-4; }
+.pickup-intro { @apply mt-2; }
+.pickup-date-card { @apply mt-4; }
+.pickup-form { @apply mt-4; }
+.pickup-form select { @apply min-h-[54px] w-full rounded-input border-[1.5px] border-line bg-card px-4 font-brand-body text-base text-ink; }
+.pickup-save { @apply mt-4; }
+.pickup-confirm { @apply mt-4 rounded-[18px] bg-soft p-4; }
+.pickup-confirm p { @apply mt-1 text-sm text-mute; }
 .sum { @apply flex items-center justify-between border-b border-line py-2.5; }
 .sum:last-child { @apply border-0; }
 .footnote { @apply mt-3.5 text-center text-[.85rem]; }
